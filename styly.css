@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+  
+ 
+}
+body{
+    background-color: #565742;
+    box-sizing: border-box;
+    background-image: url(/plano-de-fundo-preto28.webp) ; 
+}
+  
+.menu__principal {
+    padding: 40px;
+    display: flex;
+   
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    font-size: 30px;
+}
+ul {
+    list-style: none;
+    display: flex;
+}
+
+li {
+    margin-right: 20px;
+   
+}
+
+a {
+    color: rgb(233, 224, 224);
+    text-decoration: none;
+}
+
+
+.conteiner__principal {
+
+    list-style-type: none;
+    
+
+}
+
+.conteine__imagem__geral {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    column-gap: 30px;
+    padding: 3%;
+
+}
+
+
+h1 {
+    font-size: 30px;
+    text-align: center;
+    color: rgb(241, 234, 234);
+    align-items: flex-end;
+    padding: 5%;
+
+}
+
+p {
+    
+    font-family: serif;
+    color: rgb(245, 240, 240);
+    
+
+}
+
+.botao {
+
+    list-style: none;
+    padding: 4px;
+    width: 150px;
+    display: inline-block;
+    background: rgb(238, 234, 234);
+    line-height: 1.4em;
+    margin: 19px 9px;
+    cursor: pointer;
+    color: rgb(117, 112, 112);
+    position: relative;
+    z-index: 1;
+    font-size: 20px;
+
+
+}
+.botao::after {
+    content: '';
+    display: inline-block;
+    width: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgb(5, 5, 5);
+    z-index: -1;
+    transition: width 0.5s ease-in-out;
+
+
+}
+.botao:hover::after {
+    width: 100%;
+}
+img {
+    width: 300px;
+    height: 400px;
+    cursor: pointer;
+    box-shadow: #000;
+
+}
+img:hover {
+
+    transition: 0.5s;
+    opacity: 0.8;
+}
+
+@media (max-width: 767px) {
+    .menu__icone {
+        display: block;
+    }
+
+    .menu {
+        display: none;
+    }
+}
+
